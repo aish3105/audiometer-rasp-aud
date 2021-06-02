@@ -15,6 +15,7 @@ anwendbar! Bitte suchen Sie einen Audiologen auf!
 
 import sys
 import logging
+import time
 from audiometer import controller
 from audiometer import audiogram
 
