@@ -69,14 +69,6 @@ class AscendingMethod:
         print("\nTo begin, click once")
         self.ctrl.wait_for_click()
 
-        while self.click:
-            logging.info("-%s", self.ctrl.config.large_level_decrement)
-            self.decrement_click(self.ctrl.config.large_level_decrement)
-
-        while not self.click:
-            logging.info("+%s", self.ctrl.config.large_level_increment)
-            self.increment_click(self.ctrl.config.large_level_increment)
-
     def hearing_test(self):
         self.familiarization()
 
