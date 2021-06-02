@@ -57,10 +57,6 @@ def set_audiogram_parameters(dBHL, freqs, conduction, masking, earside,
             marker = 'x'
         elif conduction == 'air' and masking == 'on':
                 marker = 's'
-        elif conduction == 'bone' and masking == 'off':
-                marker = '4'
-        elif conduction == 'bone' and masking == 'on':
-                marker = '*'
         else:
             raise NameError("Conduction has to be 'air' or 'bone'")
     elif earside == 'right':
@@ -69,10 +65,6 @@ def set_audiogram_parameters(dBHL, freqs, conduction, masking, earside,
             marker = 'o'
         elif conduction == 'air' and masking == 'on':
             marker = '^'
-        elif conduction == 'bone' and masking == 'off':
-            marker = '3'
-        elif conduction == 'bone' and masking == 'on':
-            marker = '8'
         else:
             raise NameError("Conduction has to be 'air' or 'bone'")
     elif not earside == 'right' or not earside == 'left':
