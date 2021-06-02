@@ -50,7 +50,7 @@ def set_audiogram_parameters(dBHL, freqs, conduction, masking, earside,
     #  one octave on the frequency axis shall correspond
     #  to 20 dB on the hearing level axis (ISO 8253-1 (2011) ch. 10)
     ax.set_aspect(0.9 / ax.get_data_ratio())
-    ax.set_title('Hearing Level - {} ear'.format(earside))
+    ax.set_title('{} ear'.format(earside))
     if earside == 'left':
         color = 'b'
         if conduction == 'air' and masking == 'off':
