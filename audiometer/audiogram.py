@@ -34,8 +34,8 @@ def set_audiogram_parameters(dBHL, freqs, conduction, masking, earside,
     if freqs is None:
         freqs = [125, 250, 500, 750, 1000, 1500, 2000, 3000, 4000, 6000, 8000]
     xticks = np.arange(len(freqs))
-    ax.set_xlabel('frequency(Hz)')
-    ax.set_ylabel('Sound Intensity / dBHL')
+    ax.set_xlabel('Frequency(Hz)')
+    ax.set_ylabel('Hearing level(dBHL)')
     ax.set_xlim([-0.5, xticks[-1] + 0.5])
     ax.set_ylim([-20, 120])
     plt.setp(ax, xticks=xticks, xticklabels=sorted(freqs))
