@@ -38,6 +38,7 @@ class AscendingMethod:
         self.click = True
           
         print("\n\nREADY!!, click the left mouse button to begin")
+        self.ctrl.wait_for_click()
 
     def decrement_click(self, level_decrement):
 
