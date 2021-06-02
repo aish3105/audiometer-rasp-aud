@@ -92,14 +92,14 @@ class AscendingMethod:
             logging.info("2of3?: %s", current_level_list)
             for x in range(3):
                 while self.click:
-                    logging.info("-%s", self.ctrl.config.small_level_decrement)
+                    logging.info("-%s", self.ctrl.config.minor_decrement)
                     self.decrement_click(
-                        self.ctrl.config.small_level_decrement)
+                        self.ctrl.config.minor_decrement)
 
                 while not self.click:
-                    logging.info("+%s", self.ctrl.config.small_level_increment)
+                    logging.info("+%s", self.ctrl.config.minor_increment)
                     self.increment_click(
-                        self.ctrl.config.small_level_increment)
+                        self.ctrl.config.minor_increment)
 
                 current_level_list.append(self.current_level)
                 logging.info("2of3?: %s", current_level_list)
@@ -111,9 +111,9 @@ class AscendingMethod:
                     break
             else:
                 logging.info("No Match! --> +%s",
-                             self.ctrl.config.large_level_increment)
+                             self.ctrl.config.major_increment)
                 current_level_list = []
-                self.increment_click(self.ctrl.config.large_level_increment)
+                self.increment_click(self.ctrl.config.major_increment)
 
     def run(self):
 
