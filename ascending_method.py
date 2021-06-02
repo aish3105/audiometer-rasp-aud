@@ -81,8 +81,8 @@ class AscendingMethod:
         self.decrement_click(self.ctrl.config.major_decrement)
 
         while not self.click:
-            logging.info("+%s", self.ctrl.config.small_level_increment)
-            self.increment_click(self.ctrl.config.small_level_increment)
+            logging.info("+%s", self.ctrl.config.minor_increment)
+            self.increment_click(self.ctrl.config.minor_increment)
 
         current_level_list = []
         current_level_list.append(self.current_level)
