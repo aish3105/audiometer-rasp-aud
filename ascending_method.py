@@ -29,6 +29,8 @@ class AscendingMethod:
     print("\n\n\n\n*****************************************************************WELCOME!!**********************************************************************************)
     time.sleep(3)
     
+    print("\n\nREAD THE INSTRUCTIONS CAREFULLY BEFORE THE TEST BEGINS\n\n1) To begin with decrease or increase the tone intensity with '1' or '2' NUM KEYS according to the hearing comfort\n2) Once the desired tone level is set press on the space bar to proceed for the test\n3) Click the mouse button once to begin the test\n4) Kindly press and hold the left mouse button whenever the played tone is heard to you each time")
+    
 
     def __init__(self):
         self.ctrl = controller.Controller()
