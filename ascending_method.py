@@ -149,4 +149,5 @@ if __name__ == '__main__':
     with AscendingMethod() as asc_method:
         asc_method.run()
 
-    print("Finished!")
+    print("\n\n\n*******************************************************************************TEST COMPLETED******************************************************************")
+    time.sleep(10)
