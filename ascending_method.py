@@ -56,8 +56,7 @@ class AscendingMethod:
         logging.info("Begin Familiarization")
 
         print("\nSet a clearly audible tone "
-              "via the arrow keys (left & right) on the keyboard.\nConfirm "
-              "with the Space Key\n")
+              "via the '1' and '2' num keys ('1' num key decreases the tone by 10dB, '2' num key increases the tone by 5dB) on the keypad")
 
         self.current_level = self.ctrl.audibletone(
                              self.freq,
