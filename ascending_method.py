@@ -129,9 +129,7 @@ class AscendingMethod:
                                            self.earside)
 
                 except OverflowError:
-                    print("The signal is distorted. Possible causes are "
-                          "an incorrect calibration or a severe hearing "
-                          "loss. I'm going to the next frequency.")
+                    print("The signal is distorted, the upper limit of threshold reached")
                     self.current_level = None
                     continue
 
