@@ -26,6 +26,9 @@ logging.basicConfig(level=logging.DEBUG, format='%(levelname)s:%(message)s',
 
 
 class AscendingMethod:
+    print("\n\n\n\n*****************************************************************WELCOME!!**********************************************************************************)
+    time.sleep(3)
+    
 
     def __init__(self):
         self.ctrl = controller.Controller()
