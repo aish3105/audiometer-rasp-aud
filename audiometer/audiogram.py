@@ -45,8 +45,8 @@ def set_audiogram_parameters(dBHL, freqs, conduction, masking, earside,
     ax.set_yticks(minor_ticks, minor=True)
     ax.grid(which='both')
     ax.invert_yaxis()
-    ax.tick_params(axis='x', labelsize=6.5)
-    ax.tick_params(axis='y', labelsize=6.5)
+    ax.tick_params(axis='x', labelsize=5.5)
+    ax.tick_params(axis='y', labelsize=5.5)
     #  one octave on the frequency axis shall correspond
     #  to 20 dB on the hearing level axis (ISO 8253-1 (2011) ch. 10)
     ax.set_aspect(0.9 / ax.get_data_ratio())
