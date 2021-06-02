@@ -160,8 +160,8 @@ class Controller:
                               self.dBHL2dBFS(freq, current_level_dBHL),
                               earside)
             self.key = self._rpd.wait_for_arrow()
-            if self.key == 'arrow_left':
-                current_level_dBHL -= 5
+            if self.key == '1':
+                current_level_dBHL -= 10
             if self.key == 'arrow_right':
                 current_level_dBHL += 5
             self._audio.stop()
