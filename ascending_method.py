@@ -73,10 +73,12 @@ class AscendingMethod:
           
         print("\n\n\nTo begin the test, click once\nPress and hold the button until the tone is heard")
         self.ctrl.wait_for_click()
-
-        logging.info("End Familiarization: -%s",
-                     self.ctrl.config.small_level_decrement)
-        self.decrement_click(self.ctrl.config.small_level_decrement)
+          
+          
+        while self.click:
+            logging.info("End Familiarization: -%s",
+                     self.ctrl.config.major_decrement)
+        self.decrement_click(self.ctrl.config.major_decrement)
 
         while not self.click:
             logging.info("+%s", self.ctrl.config.small_level_increment)
