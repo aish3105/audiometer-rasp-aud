@@ -36,6 +36,8 @@ class AscendingMethod:
         self.ctrl = controller.Controller()
         self.current_level = 0
         self.click = True
+          
+        print("\n\nREADY!!, click the left mouse button to begin")
 
     def decrement_click(self, level_decrement):
 
