@@ -50,6 +50,12 @@ def set_audiogram_parameters(dBHL, freqs, conduction, masking, earside,
     #  one octave on the frequency axis shall correspond
     #  to 20 dB on the hearing level axis (ISO 8253-1 (2011) ch. 10)
     ax.set_aspect(0.9 / ax.get_data_ratio())
+    ax.axhspan(-20,25,facecolor = 'white', alpha = 0.3)
+    ax.axhspan(25,40,facecolor = 'yellow', alpha = 0.3)
+    ax.axhspan(40,55,facecolor = 'cyan', alpha = 0.3)
+    ax.axhspan(55,70,facecolor = 'green', alpha = 0.3)
+    ax.axhspan(70,90,facecolor = 'magenta', alpha = 0.3)
+    ax.axhspan(90,120,facecolor = 'red', alpha = 0.3)
     ax.set_title('{} ear'.format(earside))
     if earside == 'left':
         color = 'b'
