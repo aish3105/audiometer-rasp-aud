@@ -56,6 +56,12 @@ def set_audiogram_parameters(dBHL, freqs, conduction, masking, earside,
     ax.axhspan(55,70,facecolor = 'green', alpha = 0.3)
     ax.axhspan(70,90,facecolor = 'magenta', alpha = 0.3)
     ax.axhspan(90,120,facecolor = 'red', alpha = 0.3)
+    ax.text(6, 5, 'normal hearing', horizontalalignment= 'center', style = 'oblique', fontsize = '15')
+    ax.text(6, 32, 'mild hearing loss', horizontalalignment= 'center', style = 'oblique', fontsize = '15')
+    ax.text(6, 47, 'moderate hearing loss', horizontalalignment= 'center', style = 'oblique', fontsize = '15')
+    ax.text(6, 62, 'moderately severe hearing loss', horizontalalignment= 'center', style = 'oblique', fontsize = '15')
+    ax.text(6, 80, 'severe hearing loss', horizontalalignment= 'center', style = 'oblique', fontsize = '15')
+    ax.text(6, 105, 'profound hearing loss', horizontalalignment= 'center', style = 'oblique', fontsize = '15')
     ax.set_title('{} ear'.format(earside))
     if earside == 'left':
         color = 'b'
